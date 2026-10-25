@@ -1,0 +1,76 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg-primary: #0b0e14;
+  --bg-secondary: #111722;
+  --bg-tertiary: #192231;
+  --border-color: #1e293b;
+  --text-primary: #f8fafc;
+  --text-secondary: #94a3b8;
+  --accent-cyan: #06b6d4;
+  --accent-green: #10b981;
+  --accent-red: #ef4444;
+}
+
+.light {
+  --bg-primary: #f8fafc;
+  --bg-secondary: #ffffff;
+  --bg-tertiary: #f1f5f9;
+  --border-color: #e2e8f0;
+  --text-primary: #0f172a;
+  --text-secondary: #64748b;
+  --accent-cyan: #0284c7;
+  --accent-green: #059669;
+  --accent-red: #dc2626;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  overflow-x: hidden;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #334155;
+  border-radius: 3px;
+}
+
+.light ::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #475569;
+}
+
+/* Monospace ticker typography */
+.font-mono-numbers {
+  font-family: 'JetBrains Mono', monospace;
+  font-feature-settings: 'tnum' on, 'zero' on;
+}
+
+/* Subtle glow effects */
+.glow-cyan {
+  box-shadow: 0 0 15px rgba(6, 182, 212, 0.25);
+}
+
+.glow-green {
+  box-shadow: 0 0 12px rgba(16, 185, 129, 0.25);
+}
+
+.glow-red {
+  box-shadow: 0 0 12px rgba(239, 68, 68, 0.25);
+}
